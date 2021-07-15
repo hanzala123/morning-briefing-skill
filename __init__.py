@@ -1,5 +1,6 @@
 from mycroft import MycroftSkill, intent_file_handler
 from mycroft.messagebus import Message
+from datetime import datetime
 
 class MorningBriefing(MycroftSkill):
     def __init__(self):
@@ -16,9 +17,12 @@ class MorningBriefing(MycroftSkill):
     
     @intent_file_handler('good.morning.intent')
     def handle_good_morning(self, message):
-        data = dict()
-        data['title'] = self.userTitle
-        self.speak_dialog('good.morning', data)
+        
+        if 'good morning' in message.data.get('utterance'):
+            if datetime.now().hour < 13:
+                self.speak_dialog('good.morning', dict(title=self.userTitle))
+            else:
+                self.speak_dialog('not.morning', dict(title=self.userTitle))
         self.bus.emit(Message("recognizer_loop:utterance",  
                           {'utterances': self.settings.get('actions').split(';'),  
                             'lang': 'en-us'}))

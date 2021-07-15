@@ -6,10 +6,6 @@ This is is skill that gives the user some brieing for their day. this can be use
 
 ## Examples
 * "Good morning"
-* "Give me some briefing"
-* "Tell me about my day"
-* "Brief me"
-* "Brief me about my day"
 
 ## Credits
 Hanzala Ibn Zahid
