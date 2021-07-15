@@ -29,7 +29,6 @@ class MorningBriefing(MycroftSkill):
             else:
                 self.speak_dialog('not.morning', dict(title=self.userTitle))
         for action in self.actions:
-            self.log.info(action)
             if 'schedule' in action:
                 self.bus.emit(Message("speak",  
                                 {'utterance': 'Your schedule for today is',  
