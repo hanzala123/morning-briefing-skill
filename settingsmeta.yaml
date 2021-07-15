@@ -6,7 +6,7 @@ skillMetadata:
         - name: userTitle
           type: text
           label: Addressing
-          value: "sir"
+          value: "Sir"
           placeholder: Sir
     - name: What shoud Mycroft do
       fields:
@@ -15,5 +15,5 @@ skillMetadata:
         - name: actions
           type: text
           label: Actions
-          value: "what is the weather"
+          value: "what is the weather;what is my schedule for today"
 

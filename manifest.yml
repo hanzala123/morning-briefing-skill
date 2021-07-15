@@ -1,0 +1,6 @@
+dependencies:
+  # Pip dependencies on PyPI
+  skill:
+    - gcalendar_skill.forslund
+    - mycroft-weather.mycroftai
+
