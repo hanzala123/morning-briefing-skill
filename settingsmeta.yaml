@@ -8,12 +8,4 @@ skillMetadata:
           label: Addressing
           value: "Sir"
           placeholder: Sir
-    - name: What shoud Mycroft do
-      fields:
-        - type: label
-          label: Here should be the what mycroft would do. Separated with semi-colons.
-        - name: actions
-          type: text
-          label: Actions
-          value: "what is the weather;what is my schedule for today"
 
